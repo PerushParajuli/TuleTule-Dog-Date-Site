@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>TuleTule</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--Ubuntu Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--Monserrat Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/9e5c7d92d6.js" crossorigin="anonymous"></script>
+
+
+    <!--Bootstrap CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="body">
+
+    <section id="title">
+
+        <!-- Nav Bar -->
+
+        <!--Contains a Navbar-->
+
+        <div class="container" id="container-top">
+            <!-- Contains it's External CSS -->
+
+            <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+
+                <!-- Inline CSS have been inserted because of some Unknown Problem with Bootstrap -->
+                <a href="index.html" class="navbar-brand" style="font-size: xx-large;">tuletule</a>
+
+                <!--Collapsable menu icon-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Icon Elements-->
+                <div class="collapse navbar-collapse" id="navbarToggler">
+
+                    <!-- menuElements contains an External Css -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link">Sign-Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footer" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#testimonials" class="nav-link">Testimonials</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+
+
+            <!-- Title -->
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+                    <!-- Inline CSS have been inserted because of some Unknown Problem with Bootstrap -->
+                    <h1 id="firstText">
+                        Meet new and interesting dogs nearby.
+                    </h1>
+
+                    <button type="button" class="btn btn-dark btn-lg downloadButton"><span
+                            class="fa-brands fa-google-play" style="color: #fcfcfc;"></span> Download</button>
+                    <button type="button" class="btn btn-outline-light btn-lg downloadButton"> <span
+                            class="fa-brands fa-apple" style="color: #ffffff;"></span> Download</button>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="images/iphone6.png" alt="iphone-img" id="dogPhone">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="feature-box col col-sm-4">
+
+                    <span class="fa-sharp fa-solid fa-circle-check fa-3x" id="icon"></span>
+                    <h3 id="h3">Easy to use.</h3>
+                    <p>So easy to use, even your dog could do it.</p>
+
+                </div>
+
+                <div class="feature-box col col-sm-4">
+
+                    <span class="fa-solid fa-bone fa-3x" id="icon"></span>
+                    <h3 id="h3">Elite Clientele</h3>
+                    <p>We have all the dogs, the greatest dogs.</p>
+
+                </div>
+
+                <div class="feature-box col col-sm-4">
+
+                    <span class="fa-solid fa-heart fa-3x" id="icon"></span>
+                    <h3 id="h3">Guaranteed to work.</h3>
+                    <p>Find the love of your dog's life or your money back.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+
+        <!-- Carousel wrapper -->
+        <div id="testimonialCarousel" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img class="rounded-circle shadow-1-strong mb-4" src="images/dog-img.jpg" alt="avatar"
+                        style="width: 150px;" />
+                    <!-- Makes the Image smaller, style="width: 150px;" -->
+                    <!-- rounded-circle, makes the image a Cricle -->
+
+                    <div class="row d-flex justify-content-center">
+                        <!-- justify-content-center, Centers the Texts -->
+                        <div class="col-lg-8">
+
+                            <h4 class="mb-4">Kate</h4>
+                            <!-- "mb-3", responsible for margin bottom -->
+                            <p><strong>Pebbles, New York</strong></p>
+
+                            <p class="text-muted">
+                                <!-- text-muted” is designed with the property “color” with the value “#6c757d”.
+               This class is used to add text with a muted effect -->
+
+                                <i class="fas fa-quote-left pe-2"></i>
+                                <!-- fas enables " quotation "  and
+                   " fa-quote-left "" adds that quote in the left,
+                     pe-2 (Unknown)-->
+                                I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog.
+                                Woof.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+
+                        <!-- List-unstyled, removes bullets from the star
+                   d-flex, puts the stars horizontally instead of vertical
+                   justify-content-center, to center the stars
+                   text-warning, changes the color of the star to yellow
+                   mb-0, removes the slider indicator-->
+
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+
+                        <!--   fas, adds the star shape
+                   fas-star, adds the star
+                   fa-md, makes the star of medium size
+                  
+                  Note: if there is any confusion of fas & fa-star it is recomended to try
+                        removing and inserting them -->
+
+                    </ul>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="rounded-circle shadow-1-strong mb-4" src="images/lady-img.jpg" alt="avatar"
+                        style="width: 150px;" />
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <h4 class="mb-4">Serah</h4>
+                            <p><strong> Beverly, Illinois</strong></p>
+                            <p class="text-danger text-muted">
+                                <i class="fas fa-quote-left pe-2"></i>
+                                My dog used to be so lonely, but with TinDog's help, they've found the love of
+                                their life. I think.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="fas fa-star fa-md"></i></li>
+                        <li><i class="far fa-star fa-md"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-target="#testimonialCarousel" data-slide="prev">
+                <!-- data-mdb-slide="prev" -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#testimonialCarousel" data-slide="next">
+                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+        </div>
+        <!-- Carousel wrapper -->
+
+    </section>
+
+
+    <!-- Press -->
+
+    <section id="press">
+        <img id="pressLogo" src="images/techcrunch.png" alt="tc-logo">
+        <img id="pressLogo" src="images/tnw.png" alt="tnw-logo">
+        <img id="pressLogo" src="images/bizinsider.png" alt="biz-insider-logo">
+        <img id="pressLogo" src="images/mashable.png" alt="mashable-logo">
+    </section>
+
+
+    <!-- Pricing -->
+
+    <section id="pricing">
+
+        <div class="container my-5 text-center">
+            <h1 class="text-dark" style="font-weight: bold">A Plan for Every Dog's Needs</h1>
+            <p class="text-muted">Simple and affordable price plans for your and your dog.</p>
+
+            <div class="row my-5 mx-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg mb-4">
+                        <div class="card-header my-0 font-weight-bold">
+                            <h3 class="my-0">Chihuahua</h3>
+                        </div>
+                        <div class="card-body">
+                            <h1>Free</h1>
+                            <ul class="list-unstyled my-4">
+                                <li> 5 Matches Per Day</li>
+                                <li> 10 Messages Per Day</li>
+                                <li> Unlimited App Usage</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg mb-4">
+                        <div class="card-header my-0 font-weight-bold">
+                            <h3 class="my-0">Labrador</h3>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled my-4">
+                                <li>Unlimited Matches</li>
+                                <li>Unlimited Messages</li>
+                                <li>Unlimited App Usage</li>
+                            </ul>
+                            <button type="button" class="btn btn-block btn-lg btn-dark">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-lg mb-4">
+                        <div class="card-header my-0 font-weight-bold">
+                            <h3 class="my-0">Mastiff</h3>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled my-4">
+                                <li>Pirority Listing</li>
+                                <li>Unlimited Matches</li>
+                                <li>Unlimited Messages</li>
+                            </ul>
+                            <button type="button" class="btn btn-block btn-lg btn-dark">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+        <h1 class="cta-heading">Find the True Love of Your Dog's <br> Life Today.</h1>
+
+        <button type="button" class="btn btn-lg btn-dark downloadButton-cta"><span class="fa-brands fa-apple"
+                style="color: #ffffff;"></span> Download</button>
+
+        <button type="button" class="btn btn-lg btn-light downloadButton-cta"> <span class="fa-brands fa-google-play"
+                style="color: black;"></span> Download</button>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <span class="fa-brands fa-twitter fa-lg socialIcons" style="color: #00060f;"></span>
+        <span class="fa-brands fa-facebook fa-lg socialIcons" style="color: #000000;"></span>
+        <span class="fa-brands fa-instagram fa-lg socialIcons" style="color: #000000;"></span>
+        <span class="fa-brands fa-linkedin fa-lg socialIcons"></span>
+
+        <p class="copyRight">© Copyright TuleTule</p>
+    </footer>
+
+
+</body>
+
+</html>
